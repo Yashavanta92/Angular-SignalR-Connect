@@ -1,0 +1,17 @@
+<div>
+  <h2>{{title}}</h2>
+
+  <label>
+    Account Number:
+    <input type="text" name="accountNumber" [(ngModel)]="accountNumber" />
+  </label>
+  <label>
+    Premise Id:
+    <input type="text" name="premiseId" [(ngModel)]="premiseId" />
+  </label>
+
+  <button class="btn" (click)="onClickGetOutageData()">Get Outage Data</button>
+
+  <p>{{ outageData | json }}</p>
+
+</div>
